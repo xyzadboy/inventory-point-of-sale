@@ -1,58 +1,50 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"> <img src="dokumentasi/dashboard_user.png" width="400" alt="Inventory System Logo"> </p> <p align="center"> <a href="#"><img src="https://img.shields.io/badge/project-inventory--system-blue" alt="Project"></a> <a href="#"><img src="https://img.shields.io/badge/laravel-10.x-red" alt="Laravel Version"></a> <a href="#"><img src="https://img.shields.io/badge/license-MIT-green" alt="License"></a> </p>
+About Inventory System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Inventory Management System adalah aplikasi berbasis web yang dibangun menggunakan Laravel untuk mengelola data persediaan barang secara terstruktur, efisien, dan terintegrasi. Sistem ini dirancang untuk membantu proses operasional bisnis seperti pencatatan produk, pengelolaan stok, serta transaksi.
 
-## About Laravel
+Aplikasi ini mengimplementasikan konsep Role-Based Access Control (RBAC) untuk memastikan setiap pengguna memiliki hak akses sesuai dengan perannya.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Beberapa fitur utama dalam sistem ini meliputi:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Manajemen data produk dan kategori
+Pengelolaan stok barang
+Data supplier dan customer
+Transaksi order
+Cetak invoice
+Sistem role dan permission (RBAC)
+Dashboard monitoring
+System Documentation
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Berikut merupakan dokumentasi tampilan sistem:
 
-## Learning Laravel
+Dashboard
+<p align="center"> <img src="dokumentasi/dashboard_user.png" width="600"> </p> Menampilkan ringkasan data seperti jumlah produk, transaksi, supplier, dan customer untuk monitoring sistem secara real-time.
+Kategori
+<p align="center"> <img src="dokumentasi/Kategori.png" width="600"> </p> Digunakan untuk mengelompokkan produk agar lebih terstruktur dan mudah dikelola.
+Produk
+<p align="center"> <img src="dokumentasi/produk.png" width="600"> </p> Menampilkan data barang lengkap seperti nama, kategori, stok, dan harga sebagai inti dari sistem inventory.
+Satuan
+<p align="center"> <img src="dokumentasi/satuan.png" width="600"> </p> Digunakan untuk mendefinisikan satuan unit barang seperti pcs, box, dan lainnya.
+Supplier
+<p align="center"> <img src="dokumentasi/supplier.png" width="600"> </p> Berisi data pemasok barang untuk mendukung proses pengadaan.
+Customer
+<p align="center"> <img src="dokumentasi/customer.png" width="600"> </p> Menampilkan data pelanggan yang melakukan transaksi.
+Order
+<p align="center"> <img src="dokumentasi/order.png" width="600"> </p> Halaman transaksi untuk mencatat pembelian atau pemesanan barang.
+Cetak Invoice
+<p align="center"> <img src="dokumentasi/cetak_invoice.png" width="600"> </p> Digunakan untuk menghasilkan invoice sebagai bukti transaksi.
+Roles
+<p align="center"> <img src="dokumentasi/roles.png" width="600"> </p> Menampilkan daftar peran pengguna dalam sistem.
+Form Roles
+<p align="center"> <img src="dokumentasi/roles_form.png" width="600"> </p> Digunakan untuk menambahkan atau mengedit role beserta hak aksesnya.
+Permission
+<p align="center"> <img src="dokumentasi/permission.png" width="600"> </p> Menampilkan daftar izin akses dalam sistem.
+Form Permission
+<p align="center"> <img src="dokumentasi/permission_form.png" width="600"> </p> Digunakan untuk mengelola permission agar sistem lebih fleksibel dan aman.
+Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Framework yang digunakan dalam project ini adalah Laravel. Dokumentasi lengkap dapat diakses di:
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
-
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
-```
-
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+https://laravel.com/docs
+https://laracasts.com
