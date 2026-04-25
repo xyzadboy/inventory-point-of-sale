@@ -44,40 +44,4 @@ Pendekatan yang digunakan adalah Role-Based Access Control (RBAC) untuk memastik
 🎛️ Filament Admin Panel
 🗄️ MySQL
 🎨 Tailwind CSS
-⚙️ Installation
-git clone https://github.com/username/nama-repo.git
-cd nama-repo
 
-composer install
-cp .env.example .env
-php artisan key:generate
-
-php artisan migrate --seed
-php artisan serve
-📁 Project Structure
-inventory/
-└── dokumentasi/
-    ├── cetak_invoice.png
-    ├── customer.png
-    ├── dashboard_user.png
-    ├── Kategori.png
-    ├── order.png
-    ├── permission.png
-    ├── permission_form.png
-    ├── produk.png
-    ├── roles.png
-    ├── roles_form.png
-    ├── satuan.png
-    └── supplier.png
-🎯 Project Goals
-Meningkatkan efisiensi pengelolaan stok
-Mengurangi kesalahan pencatatan manual
-Menyediakan data real-time
-Mendukung pengambilan keputusan berbasis data
-🤝 Contributing
-
-Kontribusi terbuka untuk pengembangan lebih lanjut. Silakan fork repository dan ajukan pull request.
-
-📄 License
-
-Project ini menggunakan lisensi MIT.
