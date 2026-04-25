@@ -1,4 +1,4 @@
-<p align="center"> <img src="dokumentasi/dashboard_user.png" width="400" alt="Inventory System Logo"> </p> <p align="center"> <a href="#"><img src="https://img.shields.io/badge/project-inventory--system-blue" alt="Project"></a> <a href="#"><img src="https://img.shields.io/badge/laravel-10.x-red" alt="Laravel Version"></a> <a href="#"><img src="https://img.shields.io/badge/license-MIT-green" alt="License"></a> </p>
+
 About Inventory System
 
 Inventory Management System adalah aplikasi berbasis web yang dibangun menggunakan Laravel untuk mengelola data persediaan barang secara terstruktur, efisien, dan terintegrasi. Sistem ini dirancang untuk membantu proses operasional bisnis seperti pencatatan produk, pengelolaan stok, serta transaksi.
