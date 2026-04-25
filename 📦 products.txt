@@ -1,0 +1,156 @@
+📦 products
+
+Menyimpan data barang utama.
+
+Field penting:
+
+id
+name
+sku (kode unik barang)
+barcode
+category_id
+unit_id
+price (harga jual default)
+cost (harga beli)
+stock (opsional, bisa dihitung dari transaksi)
+created_at
+🗂️ categories
+
+Kategori produk.
+
+id
+name
+📏 units
+
+Satuan barang.
+
+id
+name (pcs, box, liter, dll)
+📊 2. Stock Management (INTI INVENTORY)
+📥 stock_in
+
+Barang masuk (pembelian, restock).
+
+id
+supplier_id
+date
+total
+📥 stock_in_details
+
+Detail item barang masuk.
+
+id
+stock_in_id
+product_id
+qty
+price
+📤 stock_out
+
+Barang keluar (rusak, retur, dll)
+
+id
+date
+note
+📤 stock_out_details
+id
+stock_out_id
+product_id
+qty
+🏪 3. Supplier & Customer
+🚚 suppliers
+id
+name
+phone
+address
+👤 customers (opsional untuk inventory, wajib untuk POS nanti)
+id
+name
+phone
+💰 4. Persiapan ke POS (PENTING BANGET)
+
+Walaupun fokus inventory, kamu HARUS siapin ini dari awal:
+
+🧾 transactions
+
+(Header penjualan)
+
+id
+invoice_code
+customer_id
+date
+total
+payment_method
+🧾 transaction_details
+id
+transaction_id
+product_id
+qty
+price
+🔁 5. Alternatif Lebih Profesional (RECOMMENDED)
+
+Daripada pakai stock di tabel products, lebih baik pakai:
+
+📚 stock_movements (SANGAT DIREKOMENDASIKAN)
+
+Semua pergerakan stok dicatat di sini.
+
+id
+product_id
+type (in / out)
+qty
+reference (stock_in / transaction / dll)
+date
+🧠 Kenapa ini penting?
+
+Karena:
+
+Stock = SUM(masuk) - SUM(keluar)
+Bisa tracking histori
+Lebih aman (tidak manipulatif)
+Dipakai di sistem ERP profesional
+🔗 RELASI UTAMA
+products → categories
+products → units
+stock_in → stock_in_details
+stock_out → stock_out_details
+transactions → transaction_details
+products → semua detail tabel
+⚙️ FITUR YANG BISA KAMU KEMBANGKAN
+Inventory:
+Stock realtime
+Notifikasi stok menipis
+Riwayat barang masuk/keluar
+Multi gudang (advanced)
+POS:
+Scan barcode
+Print struk
+Diskon & pajak
+Multi payment
+🎯 STRATEGI TERBAIK (BIAR GA NGULANG)
+
+Kalau kamu serius:
+
+❌ Jangan pakai field stock statis
+✅ Gunakan stock movement system
+
+🏗️ VERSI SIMPLE (Kalau mau cepat jadi)
+
+Kalau mau versi cepat:
+
+products (ada stock)
+categories
+stock_in + detail
+transactions + detail
+🚀 KESIMPULAN
+
+Untuk sistem yang:
+
+bisa berkembang ke POS
+scalable
+terlihat “professional” di portfolio
+
+👉 Gunakan kombinasi:
+
+Master data (products, categories, units)
+Transactional (stock_in, stock_out, transactions)
+stock_movements (best practice)

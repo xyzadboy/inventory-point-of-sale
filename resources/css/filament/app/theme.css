@@ -1,0 +1,19 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+/* 🔥 Atur ukuran logo */
+.fi-logo {
+    height: 80px !important;
+}
+
+/* Optional: sidebar width */
+.fi-sidebar {
+    width: 260px;
+}
+
+/* Optional: font */
+body {
+    font-family: 'Inter', sans-serif;
+}
